@@ -113,12 +113,12 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
 
 
          <div className="mb-5">
-           <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">Nombre Mascota</label>
+           <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">Nombre Cliente</label>
            <input 
            id="mascota" 
            type="text" 
            className="border-2 w-full p-2 mt-2  placeholder-gray-400 rounded-md" 
-           placeholder="Nombre de la mascota"
+           placeholder="Nombre del cliente"
            value={nombre}
            onChange={ (e) => setNombre(e.target.value)}
            >
@@ -128,7 +128,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          </div>
          <div className="mb-5">
            <label htmlFor="propietario" className="block text-gray-700 uppercase font-bold">
-             Nombre Propietario</label>
+             Pedido</label>
            <input 
            id="propietario" 
            type="text" 
@@ -142,12 +142,12 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          </div>
          <div className="mb-5">
            <label htmlFor="email" className="block text-gray-700 uppercase font-bold">
-             Email</label>
+             Telefono</label>
            <input 
            id="email" 
-           type="email" 
+           type="text" 
            className="border-2 w-full p-2 mt-2  placeholder-gray-400 rounded-md" 
-           placeholder="Email contacto de propietario"
+           placeholder="Telefono contacto del cliente"
            value={email}
            onChange={ (e) => setEmail(e.target.value)}
            >
@@ -156,12 +156,12 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          </div>
          <div className="mb-5">
            <label htmlFor="alta" className="block text-gray-700 uppercase font-bold">
-             Alta</label>
+             Hora aproximada para entrega</label>
            <input 
            id="alta" 
-           type="date" 
+           type="time" 
            className="border-2 w-full p-2 mt-2  placeholder-gray-400 rounded-md" 
-           placeholder="Fecha de alta"
+           placeholder="Hora aproximada para entrega"
            value={fecha}
            onChange={ (e) => setFecha(e.target.value)}
            >
@@ -170,10 +170,10 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          </div>
          <div className="mb-5">
            <label htmlFor="des" className="block text-gray-700 uppercase font-bold">
-             Sintomas</label>
+             Detalles</label>
            <textarea htmlFor="des"
             className="border-2 w-full p-2 mt-2  placeholder-gray-400 rounded-md" 
-            placeholder="Describe los sintomas"
+            placeholder="Describe los detalles a tener en cuenta del pedido"
             value={sintomas}
            onChange={ (e) => setSintomas(e.target.value)}
            /> 
@@ -183,7 +183,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
          type="submit" 
          className="bg-indigo-600 w-full p-3 text-white uppercase font-bold 
          hover:bg-indigo-700 cursor-pointer transition-colors" 
-         value={ paciente.id ? 'Editar Paciente': 'Agregar Paciente'}
+         value={ paciente.id ? 'Editar Pedido': 'Agregar Pedido'}
          />
        </form>
 
