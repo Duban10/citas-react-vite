@@ -19,10 +19,10 @@ const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
       {pacientes && pacientes.length ? (
         // SI HAY PACIENTES HAGA ESTO 
         <>
-          <h2 className="font-black text-3xl text-center">Listado pacientes</h2>
+          <h2 className="font-black text-3xl text-center">Listado clientes</h2>
           <p className="text-xl mt-5 mb-10 text-center">
             Adminitra tus {''}
-            <span className="text-indigo-600 font-bold">Pacientes y Citas</span>
+            <span className="text-indigo-600 font-bold">Clientes y Pedidos</span>
           
           </p>
           {pacientes.map( (paciente) =>  
